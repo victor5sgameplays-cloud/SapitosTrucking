@@ -1,174 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sapitos Trucking VTC</title>
-
-<!-- Estilos -->
-<style>
-/* Reset básico */
-body, html{
-  margin:0;
-  padding:0;
-  height:100%;
-  font-family: Arial, sans-serif;
-  background:#0a0a0a;
-  color:white;
-  overflow-x:hidden;
-}
-
-/* Fondo animado */
-#particles-js{
-  position:fixed;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  z-index:-1;
-  background:#050505;
-}
-
-/* Header */
-header{
-  text-align:center;
-  padding:20px;
-}
-
-.logo-container{
-  text-align:center;
-  margin-top:20px;
-}
-
-.logo{
-  width:220px;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-/* Brillo animado del logo */
-@keyframes glow{
-  0%{
-    filter: drop-shadow(0 0 5px #39ff14)
-           drop-shadow(0 0 10px #39ff14);
-  }
-  100%{
-    filter: drop-shadow(0 0 20px #39ff14)
-           drop-shadow(0 0 40px #39ff14)
-           drop-shadow(0 0 60px #39ff14);
-  }
-}
-
-/* Navegación */
-nav{
-  background:#111;
-  text-align:center;
-  padding:10px;
-}
-
-nav a{
-  color:white;
-  margin:15px;
-  text-decoration:none;
-  font-size:18px;
-}
-
-nav a:hover{
-  color:#39ff14;
-}
-
-/* Hero */
-.hero{
-  height:400px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h2{
-  font-size:50px;
-  color:#39ff14;
-  margin:10px 0;
-}
-
-.hero p{
-  font-size:20px;
-}
-
-/* Secciones */
-.section{
-  padding:60px;
-  text-align:center;
-}
-
-/* Footer */
-footer{
-  background:black;
-  padding:20px;
-  text-align:center;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapitos Trucking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    header, footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #444;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- Fondo animado -->
-<div id="particles-js"></div>
-
-<!-- Header con logo -->
 <header>
-  <div class="logo-container">
-    <img src="logo.png" class="logo" alt="Sapitos Trucking Logo">
-  </div>
+  <h1>Sapitos Trucking</h1>
 </header>
 
-<!-- Navegación -->
 <nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Drivers</a>
-  <a href="#">Gallery</a>
-  <a href="#">Join</a>
+  <a href="#">Inicio</a>
+  <a href="#">Acerca de</a>
+  <a href="#">Conductores</a>
+  <a href="#">Galería</a>
+  <a href="#">Unirse</a>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
-  <h2>Virtual Trucking Company</h2>
-  <p>Driving across America</p>
+<section>
+  <h2>Bienvenido a Sapitos Trucking</h2>
+  <p>Compañía virtual de transporte para jugadores de American Truck Simulator.</p>
 </section>
 
-<!-- About -->
-<section class="section">
-  <h2>About Us</h2>
-  <p>Sapitos Trucking is a virtual trucking company dedicated to teamwork, professional convoys, and fun in American Truck Simulator.</p>
+<section>
+  <h2>Acerca de Nosotros</h2>
+  <p>En Sapitos Trucking nos dedicamos a crear convoyes profesionales, trabajo en equipo y diversión en el juego.</p>
 </section>
 
-<!-- Join -->
-<section class="section">
-  <h2>Join Our Team</h2>
-  <p>Become part of Sapitos Trucking and drive with us. Join our Discord community!</p>
+<section>
+  <h2>Únete a Nuestro Equipo</h2>
+  <p>Si quieres formar parte de Sapitos Trucking, contáctanos y únete a nuestra comunidad.</p>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>© 2026 Sapitos Trucking VTC</p>
 </footer>
-
-<!-- Librería de partículas -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": {"value": 80},
-    "color": {"value": "#39ff14"},
-    "shape": {"type": "circle"},
-    "opacity": {"value":0.5},
-    "size": {"value":3},
-    "move":{"enable":true,"speed":2}
-  }
-});
-</script>
 
 </body>
 </html>
