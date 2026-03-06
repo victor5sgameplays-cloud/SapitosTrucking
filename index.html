@@ -68,10 +68,20 @@ text-align:center;
 }
 
 </style>
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+background:#050505;
+}
 
 </head>
 
 <body>
+<div id="particles-js"></div>
 
 <header>
 <h1>Sapitos Trucking</h1>
@@ -106,6 +116,33 @@ professional convoys and fun in American Truck Simulator.
 <footer>
 <p>© 2026 Sapitos Trucking VTC</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80
+    },
+    "color": {
+      "value": "#39ff14"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.5
+    },
+    "size": {
+      "value": 3
+    },
+    "move": {
+      "enable": true,
+      "speed": 2
+    }
+  }
+});
+</script>
 
 </body>
 </html>
